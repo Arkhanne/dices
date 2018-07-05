@@ -1,0 +1,169 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 650px;
+  background-color: #000000;
+}
+
+
+/* ---- typography ---- */
+
+body {
+  color: #111;
+  font-family: Impact;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {
+  font-size: 3em;
+  color: #1aad03;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+  color: #000000;
+  margin: 0;
+}
+
+h3 {}
+
+p {
+  margin: 0;
+}
+
+
+
+/* main container */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* dices */
+
+.dice-container {
+  height: 84px;
+}
+
+.dice {
+  font-size: 4em;
+  margin: 6px;
+}
+
+
+
+/* actions */
+
+.actions-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#dice-number {
+  margin: 0 10px;
+}
+
+button {
+  font-family: Impact;
+  border: 0;
+  width: 100px;
+  line-height: 2.4;
+  padding: 0 20px;
+  font-size: 1em;
+  text-align: center;
+  color: #1aad03;
+  text-shadow: 1px 1px 1px #000;
+  background-color: #000000;
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+button:hover {
+  background-color: #1aad03;
+  color: #ffffff;
+}
+
+button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+/* boxes */
+
+.dice-container {
+  display: flex;
+  justify-content: space-between;
+  border: 4px double #000000;
+  background-color: #1aad03;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  border: 5px double;
+  width: 350px;
+  height: 150px;
+  background-color: #1aad03;
+  line-height: 200px;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1aad03;
+  height: 60px;
+  border: 5px double;
+  font-size: 2em;
+  padding: 0 70px;
+  line-height: 50px;
+}
+
+
+
+.logo {
+  background-color: #000000;    
+  line-height: 76px;
+  padding: 0 10px;
+}
+
+.x {
+  line-height: 76px;
+  padding: 0 10px;
+}
+
+#dice-number {
+  background-color: #000000; 
+  color: #1aad03;   
+  line-height: 76px;
+  font-size: 3em;
+  font-family: Impact;
+  margin: 0;
+  padding-left: 10px;
+  width: 70px;
+  border-color: rgba(255, 255, 255, .6);
+}
+
+#dice-container-left {
+  display: flex;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Dices!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/dices.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+<section class="container">
+  <div id="dice-box" class="dice-container">
+    <div id="dice-container-left">
+      <div class="logo">
+          <h1>DICES</h1>
+      </div>
+      <div class="x">
+        <h2>x</h2>
+      </div>
+      <input type="number" id="dice-number" value="0" min="1" max="4">
+    </div>
+    <div class="actions-container">
+      <div class="button">
+        <button id="button-launch">Launch!</button>
+      </div>
+      <div class="button">
+        <button id="button-restart">Restart</button>
+      </div>
+    </div>
+  </div>
+  <div class="box-container">
+    <div id="box1" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="box2" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  <div class="total-container">
+    <div id="total1">Total: 0</div>
+    <div id="total2">Total: 0</div>
+  </div>
+</section>
+  <script src="javascript/dices.js"></script>
+</body>
+</html>
